@@ -12,8 +12,9 @@ levenshtein.connect({
 });
 
 levenshtein.on('ready', function(){
-  levenshtein.on('in.getDistance', function(string1, string2){
-    var lev = new Levenshtein(string1, string2);
-    levenshtein.emit('out.getDistance', lev.distance);
+  levenshtein.once('in.getDistance', function (event1, event2, data){
+    var lev = new Levenshtein(data.stringOne, data.stringTwo);
+    levenshtein.emit('out.getDistanceResponse', lev.distance);
+    console.log(lev.distance);
   });
 }); 
