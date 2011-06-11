@@ -1,0 +1,17 @@
+{
+    "name": "hook.io-levenshtein",
+    "description": "Simple hook.io hook to return the Levenshtein distance between two strings.",
+    "version": "0.1.0",
+    "author": "AvianFlu",
+    "repository": {
+        "type": "git", 
+        "url": "http://github.com/AvianFlu/hook.io-levenshtein.git" 
+    },
+    "dependencies": {
+       "levenshtein", ">= 1.0.0"
+     },    
+    "engine": [
+        "node >=0.4.0" 
+    ],
+    "main": "lib/levenshtein" 
+}
