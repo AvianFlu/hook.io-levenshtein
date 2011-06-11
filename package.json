@@ -7,8 +7,10 @@
         "type": "git", 
         "url": "http://github.com/AvianFlu/hook.io-levenshtein.git" 
     },
+    "bin": "./levenshtein",
     "dependencies": {
-       "levenshtein", ">= 1.0.0"
+       "hook.io": "0.4.x",
+       "levenshtein": ">= 1.0.0"
      },    
     "engine": [
         "node >=0.4.0" 
